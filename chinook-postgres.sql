@@ -8092,3 +8092,14 @@ INSERT INTO "public"."tracks" ("id", "name", "album_id", "media_type_id", "genre
 ('3502', 'Quintet for Horn, Violin, 2 Violas, and Cello in E Flat Major, K. 407/386c: III. Allegro', '346', '2', '24', 'Wolfgang Amadeus Mozart', '221331', '3665114', '0.99', NULL, NULL),
 ('3503', 'Koyaanisqatsi', '347', '2', '10', 'Philip Glass', '206005', '3305164', '0.99', NULL, NULL);
 
+SELECT setval('albums_id_seq', (SELECT MAX(id) from albums), true);
+SELECT setval('artists_id_seq', (SELECT MAX(id) from artists), true);
+SELECT setval('customers_id_seq', (SELECT MAX(id) from customers), true);
+SELECT setval('employees_id_seq', (SELECT MAX(id) from employees), true);
+SELECT setval('genres_id_seq', (SELECT MAX(id) from genres), true);
+SELECT setval('invoice_items_id_seq', (SELECT MAX(id) from invoice_items), true);
+SELECT setval('invoices_id_seq', (SELECT MAX(id) from invoices), true);
+SELECT setval('media_types_id_seq', (SELECT MAX(id) from media_types), true);
+SELECT setval('playlist_track_id_seq', (SELECT MAX(id) from playlist_track), true);
+SELECT setval('playlists_id_seq', (SELECT MAX(id) from playlists), true);
+SELECT setval('tracks_id_seq', (SELECT MAX(id) from tracks), true);
