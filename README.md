@@ -10,4 +10,4 @@ To import the `chinook-postgres.sql` SQL dump into your database using TablePlus
 
 1. Download `chinook-postgres.sql`
 2. Open your database with TablePlus
-3. File > Import > From SQL Dump... > Select the file and click Open > Import
+3. `File` > `Import` > `From SQL Dump...` > Select the file and click `Open` > click `Import`
