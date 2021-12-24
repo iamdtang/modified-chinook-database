@@ -6,8 +6,8 @@ This repository contains a modified version of the `chinook` SQLite database at 
 
 ### ITP 405 Students
 
-To import the `chinook-postgres.sql` SQL dump into your database using TablePlus:
+To import the `chinook-postgres.sql` SQL dump into your database using [TablePlus](https://tableplus.com/):
 
 1. Download `chinook-postgres.sql`
-2. Open your database with TablePlus
+2. Create a Postgres database on Heroku. Open it with TablePlus.
 3. `File` > `Import` > `From SQL Dump...` > Select the file and click `Open` > click `Import`
